@@ -10,6 +10,7 @@ This lab uses 4 VM's of Ubuntu Desktop, Kali Linux, Snort, and Metasploitable 2.
 | Rule Name | MITRE Technique | Tool | Status |
 |---|---|---|---|
 | FTP Brute Force | T1110.001 | Snort | Tested |
+| VSFTPD 2.3.4 Backdoor | T1059.004 | Snort | Tested |
 
 ## Skills Demonstrated
 - Network IDS configuration and rule authoring
