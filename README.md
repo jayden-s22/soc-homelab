@@ -4,7 +4,7 @@
 A homelab for documenting network architecture, IDS deployment, and detection engineering with Snort, Kali, and Metasploitable 2. Includes rule writing, attack simulation, and MITRE ATT&CK mapping.
 
 ## Environment
-This lab uses 4 VM's of Ubuntu Desktop, Kali Linux, Snort, and Metasploitable 2.
+[Network Topology](topology.md)
 
 ## Detections Built
 | Rule Name | MITRE Technique | Tool | Status |
@@ -13,7 +13,7 @@ This lab uses 4 VM's of Ubuntu Desktop, Kali Linux, Snort, and Metasploitable 2.
 | VSFTPD 2.3.4 Backdoor | T1190/T1059.004 | Snort | Tested |
 
 ## Skills Demonstrated
-- Network IDS configuration and rule authoring
-- Attack simulation and detection validation
-
-## Lab Journal
+- Authored and debugged Snort rules, including a directionality issue by tracing how FTP response codes travel
+- Mapped every detection to MITRE ATT&CK techniques (T1110.001, T1190, T1059.004)
+- Simulated real attacks (Hydra brute force, vsftpd backdoor exploitation) and validated detection rules fired correctly
+- Understood the difference between stateful and stateless detection and chose the correct flow keyword for rules and applied it to match traffic
