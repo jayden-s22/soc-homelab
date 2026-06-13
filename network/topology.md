@@ -23,6 +23,3 @@ All VMs on VirtualBox Internal Network (172.30.1.0/24) for isolation
 
 ## Snort promiscuous mode: 
 Allow All
-
-## Known issues/considerations:
-- Snort is IDS only, not IPS
