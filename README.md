@@ -4,7 +4,7 @@
 A homelab for documenting network architecture, IDS deployment, and detection engineering with Snort, Kali, and Metasploitable 2. Includes rule writing, attack simulation, and MITRE ATT&CK mapping.
 
 ## Environment
-[Network Topology](topology.md)
+[Network Topology](network/topology.md)
 
 ## Detections Built
 | Rule Name | MITRE Technique | Tool | Status |
