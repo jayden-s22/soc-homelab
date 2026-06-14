@@ -3,7 +3,7 @@ $HOME_NET: 172.30.1.0/24
 
 $EXTERNAL_NET: !$HOME_NET
 
-[Rule file location](snort/rules/local.rules)
+[Rule file location](rules/local.rules)
 
 Alert log location: /var/log/snort/alert
 
