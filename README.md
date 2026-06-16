@@ -11,6 +11,7 @@ A homelab for documenting network architecture, IDS deployment, and detection en
 |---|---|---|---|
 | FTP Brute Force | T1110.001 | Snort | Tested |
 | VSFTPD 2.3.4 Backdoor | T1190/T1059.004 | Snort | Tested |
+| SYN Scan sfPortscan| T1595 | Snort | Tested |
 
 ## Skills Demonstrated
 - Authored and debugged Snort rules, including a directionality issue by tracing how FTP response codes travel
