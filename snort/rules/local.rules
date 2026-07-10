@@ -8,3 +8,4 @@
 alert tcp $HOME_NET 21 -> any any (msg:"BRUTE FORCE DETECTED"; content:"530"; flow:established,to_client; threshold: type threshold, track by_dst, count 10, seconds 10; sid:1000001; rev:1;)
 alert tcp any any -> $HOME_NET 21 (flow:established,to_server; msg:"BACKDOOR TRIGGER DETECTED"; content:"USER "; content:":)"; distance:1; within:100; sid:1000002; rev:1;)
 alert tcp any any -> $HOME_NET 6200 (flow:stateless; msg:"BACKDOOR CONNECTION DETECTED";sid:1000003; rev:1;)
+alert tcp 172.30.1.28 any -> 172.30.1.20 any (flow:established,to_server; msg:"REVERSE SHELL DETECTED"; sid:1000004; rev:1;)
